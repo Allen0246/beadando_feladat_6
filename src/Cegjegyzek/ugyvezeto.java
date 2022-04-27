@@ -8,10 +8,16 @@ public class ugyvezeto {
         this.ugyvezeto = ugyvezeto;
         this.kor=kor;
     }
-    public void setUgyvezeto(String ugyvezeto){
+    public void setUgyvezeto(){
         this.ugyvezeto=ugyvezeto;
     }
-    public void setKor(int kor){
+    public String getUgyvezeto(){
+        return ugyvezeto;
+    }
+    public void setKor(){
         this.kor=kor;
+    }
+    public int getKor(){
+        return kor;
     }
 }

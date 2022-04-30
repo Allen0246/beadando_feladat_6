@@ -21,15 +21,6 @@ public class CegjegyzekTeszt {
         Assertions.assertNotNull(cegjegyzek);
 
 
-        cegjegyzek.addCeg(
-                new Ceg(
-                        new Date(2022,1,1),
-                        new Ugyvezeto(30,"Egyip Tomi"),
-                        2,
-                        Arrays.asList(1, 2),
-                        "Remek Elek"
-                )
-                );
     }
     @Test
     public void kftLetrehozasaTeszt(){

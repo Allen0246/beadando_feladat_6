@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MenuAP" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.MenuController">
+   <children>
+      <Label layoutX="187.0" layoutY="23.0" prefHeight="64.0" prefWidth="91.0" text="Menü">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="CegFelvitelButton" layoutX="28.0" layoutY="190.0" mnemonicParsing="false" onAction="#CegFelvitelButtonClick" text="Cég felvitele" textFill="RED" />
+      <Button fx:id="FajlKimentesButton" layoutX="338.0" layoutY="190.0" mnemonicParsing="false" onAction="#FajlKimentesButtonClick" text="Fájlba kimentés" textFill="#1300ff" />
+      <Button fx:id="CegjegyzekLekereseButton" layoutX="163.0" layoutY="190.0" mnemonicParsing="false" onAction="#CegjegyzekLekereseButtonClick" text="Cégjegyzék lekérése" textFill="#1300ff" />
+   </children>
+</AnchorPane>

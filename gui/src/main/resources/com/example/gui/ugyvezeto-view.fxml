@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="UgyvezetoAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.UgyvezetoController">
+   <children>
+      <Label fx:id="Eletkora" layoutX="65.0" layoutY="84.0" text="Ügyvezető életkora" />
+      <Label fx:id="Vegzettsege" layoutX="55.0" layoutY="124.0" text="Ügyvezető végzettsége" />
+      <TextField fx:id="EletkoraTF" layoutX="207.0" layoutY="80.0" />
+      <TextField fx:id="VegzettsegTF" layoutX="207.0" layoutY="120.0" />
+      <Button fx:id="BekuldButton2" layoutX="195.0" layoutY="248.0" mnemonicParsing="false" onAction="#BekuldButtonClick2" text="Beküld" textFill="RED" />
+      <Label fx:id="testlabel" layoutX="44.0" layoutY="240.0" />
+   </children>
+</AnchorPane>

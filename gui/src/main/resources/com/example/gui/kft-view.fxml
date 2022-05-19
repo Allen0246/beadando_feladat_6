@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="KftAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.KftController">
+   <children>
+      <Label fx:id="Mikoralakult" layoutX="72.0" layoutY="45.0" text="Mikor alakult?" />
+      <Label fx:id="Ugyvezeto" layoutX="84.0" layoutY="84.0" text="Ügyvezető" />
+      <Label fx:id="Letszam" layoutX="88.0" layoutY="124.0" text="Létszám" />
+      <Label fx:id="Alaptoke" layoutX="86.0" layoutY="166.0" text="Alaptőke" />
+      <TextField fx:id="MikoralakultTF" layoutX="207.0" layoutY="41.0" />
+      <TextField fx:id="UgyvezetoTF" layoutX="207.0" layoutY="80.0" />
+      <TextField fx:id="LetszamTF" layoutX="207.0" layoutY="120.0" />
+      <TextField fx:id="AlaptokeTF" layoutX="207.0" layoutY="162.0" />
+      <Button fx:id="BekuldButton" layoutX="190.0" layoutY="228.0" mnemonicParsing="false" onAction="#BekuldButtonClick" text="Beküld" textFill="RED" />
+      <Label fx:id="testlabel" layoutX="44.0" layoutY="240.0" />
+   </children>
+</AnchorPane>

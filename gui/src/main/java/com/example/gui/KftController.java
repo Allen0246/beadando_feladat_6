@@ -56,6 +56,8 @@ public class KftController {
 
         AnchorPane pane= FXMLLoader.load(getClass().getResource("ugyvezeto-view.fxml"));
         KftAP.getChildren().setAll(pane);
+        String Mikoralakult =Integer.parseInt(MikoralakultTF.getText());
+
         Ceg ceg = new Ceg(MikoralakultTF.getText() , UgyvezetoTF.getText(),LetszamTF.getText(),AlaptokeTF.getText());
     }
 }

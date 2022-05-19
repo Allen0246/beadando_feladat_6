@@ -7,7 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-//import modellek.ceg.Ceg;
+import modellek.ceg.Ceg;
+import cegjegyzek.Cegjegyzek;
 
 import java.io.IOException;
 
@@ -55,6 +56,6 @@ public class KftController {
 
         AnchorPane pane= FXMLLoader.load(getClass().getResource("ugyvezeto-view.fxml"));
         KftAP.getChildren().setAll(pane);
-        //Ceg ceg = new Ceg(MikoralakultTF.getText() , UgyvezetoTF.getText(),LetszamTF.getText(),AlaptokeTF.getText());
+        Ceg ceg = new Ceg(MikoralakultTF.getText() , UgyvezetoTF.getText(),LetszamTF.getText(),AlaptokeTF.getText());
     }
 }

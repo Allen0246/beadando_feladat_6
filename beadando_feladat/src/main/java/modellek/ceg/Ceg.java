@@ -14,7 +14,7 @@ public class Ceg implements Serializable {
     private List<Integer> alkalmazottIDs;
     private int alaptoke;
     private String beltagnev;
-    private CegTipus cegTipus;
+    private modellek.ceg.CegTipus cegTipus;
 
 
     public Ceg(Date alakult, Ugyvezeto ugyvezeto, int letszam, List<Integer> alkalmazottIDs, String beltagnev) {
@@ -23,21 +23,21 @@ public class Ceg implements Serializable {
         this.letszam = letszam;
         this.alkalmazottIDs = alkalmazottIDs;
         this.beltagnev = beltagnev;
-        this.cegTipus = CegTipus.BT;
+        this.cegTipus = modellek.ceg.CegTipus.BT;
     }
-    public Ceg(Date alakult, Ugyvezeto ugyvezeto, int letszam, List<Integer> alkalmazottIDs, int alaptoke) throws KftLetrehozasiHiba {
+    public Ceg(Date alakult, Ugyvezeto ugyvezeto, int letszam, List<Integer> alkalmazottIDs, int alaptoke) throws modellek.ceg.KftLetrehozasiHiba {
         this.alakult = alakult;
         this.ugyvezeto = ugyvezeto;
         this.letszam = letszam;
         this.alkalmazottIDs = alkalmazottIDs;
         if (alaptoke<1000000) {
-            throw new KftLetrehozasiHiba("Nem elég az alaptőke");
+            throw new modellek.ceg.KftLetrehozasiHiba("Nem elég az alaptőke");
         }
         this.alaptoke = alaptoke;
-        this.cegTipus = CegTipus.KFT;
+        this.cegTipus = modellek.ceg.CegTipus.KFT;
     }
 
-    public Ceg(Date alakult, Ugyvezeto ugyvezeto, int letszam, List<Integer> alkalmazottIDs, int alaptoke, String beltagnev, CegTipus cegTipus) {
+    public Ceg(Date alakult, Ugyvezeto ugyvezeto, int letszam, List<Integer> alkalmazottIDs, int alaptoke, String beltagnev, modellek.ceg.CegTipus cegTipus) {
         this.alakult = alakult;
         this.ugyvezeto = ugyvezeto;
         this.letszam = letszam;

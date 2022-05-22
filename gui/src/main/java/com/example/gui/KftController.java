@@ -11,6 +11,8 @@ import modellek.ceg.Ceg;
 import cegjegyzek.Cegjegyzek;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class KftController {
 
@@ -56,8 +58,23 @@ public class KftController {
 
         AnchorPane pane= FXMLLoader.load(getClass().getResource("ugyvezeto-view.fxml"));
         KftAP.getChildren().setAll(pane);
-        String Mikoralakult =Integer.parseInt(MikoralakultTF.getText());
 
-        Ceg ceg = new Ceg(MikoralakultTF.getText() , UgyvezetoTF.getText(),LetszamTF.getText(),AlaptokeTF.getText());
+
+        String ugyvezeto=UgyvezetoTF.getText();
+
+        String letszam = LetszamTF.getText();
+        int letszamtoint = Integer.parseInt(letszam);
+        System.out.println("Ez van elterolva a valtozoban int-e alakitva: " + letszamtoint);
+
+        String alaptoke = AlaptokeTF.getText();
+        int alaptoketoint = Integer.parseInt(letszam);
+
+        /*String MikorAlakultST = MikoralakultTF.getText();
+        try {
+            Date MikorAlakulttodate = new SimpleDateFormat("dd-MMMM-yyyy").parse(MikorAlakultST);
+        }catch (Exception e) {
+            System.out.println("Nem sikerült átalakítani datumma");
+        }*/
+        //Ceg ceg = new Ceg();
     }
 }

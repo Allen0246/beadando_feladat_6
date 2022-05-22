@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gui" />
+        <module name="beadando_feladat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gui" target="18" />
+      <module name="beadando_feladat" target="18" />
+      <module name="gui" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
